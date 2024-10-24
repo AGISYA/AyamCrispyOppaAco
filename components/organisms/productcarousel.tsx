@@ -64,8 +64,8 @@ function CarouselImages({
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 w-full">
             <Image
-              width={80}
-              height={90}
+              width={1000}
+              height={1000}
               src={image.src}
               alt={`Produk ${index + 1}`}
               className="w-full h-full object-cover rounded-lg"
