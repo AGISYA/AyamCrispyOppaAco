@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 interface Image {
@@ -62,7 +63,9 @@ function CarouselImages({
       >
         {images.map((image, index) => (
           <div key={index} className="flex-shrink-0 w-full">
-            <img
+            <Image
+              width={80}
+              height={90}
               src={image.src}
               alt={`Produk ${index + 1}`}
               className="w-full h-full object-cover rounded-lg"
